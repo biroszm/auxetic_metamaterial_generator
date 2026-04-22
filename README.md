@@ -104,22 +104,22 @@ This turns a traditionally expensive trial-and-error design process into a much 
 ### 1. Evaluation metrics of the trained models
 This figure summarizes the regression quality of the compared models using **MAE**, **RMSE**, and **R²**. In my experiments, Random Forest and Gradient Boosting produced very strong fits, both achieving R² values close to 0.99, while KNN lagged behind. The source text reports MAE values of 205.84 and 214.07 for Random Forest and Gradient Boosting respectively, with corresponding R² values of 0.9896 and 0.9898, whereas KNN reached 0.8702. 
 
-![Model evaluation metrics](preview_1.png)
+![Model evaluation metrics](preview_4.png)
 
 ### 2. Predicted vs. actual elasticity values
 This figure shows how closely the trained models reproduced the simulated FEA values. The closer the points are to the diagonal line, the better the prediction quality.
 
-![Predicted vs. actual values](preview_2.png)
+![Predicted vs. actual values](preview_3.png)
 
 ### 3. Parameter trends and interpolated surfaces
 This figure captures the relationship between elasticity and the main geometric parameters. It illustrates an important conclusion of the study: increasing strut thickness tends to increase elasticity, while increasing the control-point height tends to reduce it. It also shows how multiple parameter combinations can produce similar target responses. The source document explicitly states that thicker struts increased stiffness and larger control-point height reduced elasticity, while a change in unit-cell size produced an approximately 8.5% elasticity shift per 1 mm. 
 
-![Parameter trends and interpolated surfaces](preview_3.png)
+![Parameter trends and interpolated surfaces](preview_2.png)
 
 ### 4. Auxetic behavior, geometry, and simulation concept
 This overview figure illustrates the physical intuition behind the project: the difference between conventional and auxetic response, the sinusoidal unit-cell topology, the geometric parameters, and the simulated deformation/stress field.
 
-![Auxetic overview](preview_4.png)
+![Auxetic overview](preview_1.png)
 
 ---
 
